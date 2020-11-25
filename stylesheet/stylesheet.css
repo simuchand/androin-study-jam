@@ -296,6 +296,15 @@ header a:hover {
     margin: 0;
 }
 
+.about04-container h1 {
+    text-align: center;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 40px 0 0;
+}
+
 .row {
     display: flex;
     padding: 3%;
@@ -337,6 +346,13 @@ header a:hover {
     margin: 10px 0;
 }
 
+.person hr {
+    background: #3cba54;
+    height: 1px;
+    outline: none !important;
+    border: none !important;
+}
+
 .sm-container {
     display: flex;
 }
@@ -350,6 +366,56 @@ header a:hover {
     border-radius: 10px;
     margin: auto;
     cursor: pointer;
+}
+
+footer {
+    background: white;
+    color: black;
+    text-align: center;
+    height: 180px;
+    margin: 0;
+    padding: 10px;
+}
+
+footer h3 {
+    display: block;
+    margin-top: 1%;
+}
+
+footer a {
+    display: inline-block;
+    color: #666666;
+    text-decoration: none;
+    margin: 10px 25px 10px 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: black;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #3cba54;
+    cursor: pointer;
+}
+
+.link>a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #3cba54;
+    font-weight: bold;
+}
+
+.link {
+    border-radius: 20px;
+    padding: 3%;
+    display:block;
+    margin: auto auto 5%;
+    border-color: white;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
