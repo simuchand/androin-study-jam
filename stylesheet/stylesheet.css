@@ -41,7 +41,7 @@ header {
 }
 
 header img {
-    width: 60px;
+    width: 70px;
     height: 60%;
     margin: 0.1% 0;
     cursor: pointer;
@@ -94,6 +94,22 @@ header a:hover {
     line-height: 1.5;
 }
 
+.about-content a {
+    float: right;
+    background: #3cba5490;
+    padding: 10px;
+    font-size: 2.0vw;
+    letter-spacing: 0.1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.about-content a:hover {
+    background: #3cba54;
+}
+
 .about-img {
     width: 40%;
 }
@@ -109,7 +125,9 @@ header a:hover {
     margin: 100px auto 0;
 }
 
-.about02-container {
+.about02-container,
+.about03-container,
+.about04-container{
     display: block;
     background: white;
     height:fit-content;
@@ -118,21 +136,28 @@ header a:hover {
     margin: 0;
 }
 
-.about02-container h1 {
+.about02-container h1,
+.about03-container h1{
     color: #3DDC84;
     text-align: center;
     font-weight: bold;
     font-size: 3.8vw;
     margin: 0;
-    padding: 100px 0 0;
+    padding: 10% 0 0;
 }
 
-.about02-container p {
+.about02-container p,
+.about03-container p{
     text-align: center;
-    font-size: 2.0vw;
+    font-size: 2.5vw;
     line-height: 1.2;
     letter-spacing: 0.05em;
     padding: 0;
+}
+
+.about03-container p {
+    font-size: 2.0vw;
+    padding: 0 5%;
 }
 
 .about02-container img {
@@ -242,6 +267,91 @@ header a:hover {
     border-radius: 6px;
 }
 
+.about03-container a {
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    background: #3cba5470;
+    padding: 10px;
+    font-size: 2.0vw;
+    letter-spacing: 0.1em;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.about03-container a:hover {
+    background: #3cba54;
+    color: white;
+}
+
+.about04-container{
+    display: block;
+    background: #073042;
+    height:fit-content;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    padding: 3%;
+}
+
+.person {
+    width: 30%;
+    height: 50%;
+    background: #d7effe;
+    padding: 1%;
+    margin: 0 auto;
+    color: black;
+    border-radius: 25px;
+}
+
+.person img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 80px 80px 0 0;
+}
+
+.person h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+.person span {
+    color: #3cba54;
+    font-size: 3.5vw;
+    margin: 10px 0 0;
+}
+
+.person h2 {
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 10px 0;
+}
+
+.sm-container {
+    display: flex;
+}
+
+.sm-logo a {
+    width: fit-content;
+}
+
+.sm-logo img {
+    width: 30%;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media only screen and (max-width: 767px) {
     header a {
@@ -249,7 +359,7 @@ header a:hover {
     }
 
     header h3 {
-        font-size: 2.5vw;
+        font-size: 1.5vw;
         margin: auto 0 auto 10px;
         width: fit-content;
     }
@@ -272,9 +382,23 @@ header a:hover {
     }
 
     .about-content h1,
-    .about-content p {
+    .about-content p,
+    .about-content a{
         text-align: center;
         padding: 0;
+    }
+
+    .about-content a {
+        display: block;
+        width: 50%;
+        font-size: 4.5vw;
+        float: none;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .about-content p {
+        padding: 0 5%;
     }
 
     .dsc_logo {
