@@ -41,17 +41,9 @@ header {
 }
 
 header img {
-    width: 70px;
-    height: 60%;
-    margin: 0.1% 0;
+    width: 20%;
+    margin: auto 0;
     cursor: pointer;
-}
-
-header h3 {
-    margin: auto 0 auto 10px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 1.8vw;
 }
 
 header a {
@@ -312,7 +304,6 @@ header a:hover {
 
 .person {
     width: 30%;
-    height: 50%;
     background: #d7effe;
     padding: 1%;
     margin: 0 auto;
@@ -355,6 +346,8 @@ header a:hover {
 
 .sm-container {
     display: flex;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .sm-logo a {
@@ -363,8 +356,9 @@ header a:hover {
 
 .sm-logo img {
     width: 30%;
-    border-radius: 10px;
-    margin: auto;
+    height: inherit;
+    border-radius: 1%;
+    margin: 0 auto 10px;
     cursor: pointer;
 }
 
@@ -380,6 +374,7 @@ footer {
 footer h3 {
     display: block;
     margin-top: 1%;
+    font-size: 1.5vw;
 }
 
 footer a {
@@ -387,7 +382,7 @@ footer a {
     color: #666666;
     text-decoration: none;
     margin: 10px 25px 10px 0;
-    font-size: 25px;
+    font-size: 1.5vw;
     cursor: pointer;
 }
 
@@ -398,36 +393,17 @@ footer a:hover {
 footer p {
     margin: 0;
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 2.5vw;
     color: #3cba54;
     cursor: pointer;
 }
 
-.link>a{
-    font-size: 16px;
-    text-decoration: none;
-    color: #3cba54;
-    font-weight: bold;
-}
 
-.link {
-    border-radius: 20px;
-    padding: 3%;
-    display:block;
-    margin: auto auto 5%;
-    border-color: white;
-}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media only screen and (max-width: 767px) {
     header a {
         font-size: 2.0vw;
-    }
-
-    header h3 {
-        font-size: 1.5vw;
-        margin: auto 0 auto 10px;
-        width: fit-content;
     }
 
     .about01-container {
